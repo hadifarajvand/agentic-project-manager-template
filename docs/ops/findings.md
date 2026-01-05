@@ -1,152 +1,28 @@
 # Findings Log (Project-Specific)
 
-Use this file to log every command and error while applying the template to a project. Replace placeholders with project details after copying.
+Fill this during Phase 1 for the target repo. Do not keep template-maintenance logs here.
 
 ## Environment
 - Date: TBD
 - Host: TBD
 - OS: TBD
-- Repo path: /workspace/agentic-project-manager-template
-- Shell: bash
-- Notes: Template maintenance session; remove after adopting in a project.
+- Repo path: TBD
+- Shell: TBD
+- Notes: TBD
 
-## Command Log (template maintenance)
-- Command: `ls` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `AGENTS.md  PHASES.md  README.md  docs`
-- Command: `ls docs` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `adr  contracts  ops  playbooks  system`
-- Command: `find .. -name AGENTS.md -print` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `../agentic-project-manager-template/AGENTS.md`
-- Command: `cat AGENTS.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `ls docs/playbooks` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `claude_opus.md  claude_sonnet.md  codex.md`
-- Command: `cat PHASES.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat README.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat docs/ops/checklist.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat docs/adr/pending/0000-template.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat docs/playbooks/codex.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat docs/playbooks/claude_sonnet.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat docs/playbooks/claude_opus.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `ls docs/system` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `ls docs/system/diagrams` (workdir: `/workspace/agentic-project-manager-template`, exit: 2)
-  - Error: `ls: cannot access 'docs/system/diagrams': No such file or directory`
-- Command: `cat docs/ops/runbook.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat docs/contracts/core.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `ls docs/adr` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `find . -name '.DS_Store'` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `./.DS_Store`, `./docs/.DS_Store`, `./docs/adr/.DS_Store`, `./docs/system/.DS_Store`
-- Command: `rm .DS_Store docs/.DS_Store docs/adr/.DS_Store docs/system/.DS_Store` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `mkdir -p docs/system/diagrams docs/adr/accepted` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat <<'EOF' > .gitignore ...` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat <<'EOF' > .editorconfig ...` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat <<'EOF' > LICENSE ...` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat <<'EOF' > CODEOWNERS ...` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat <<'EOF' > SECURITY.md ...` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat <<'EOF' > CONTRIBUTING.md ...` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `touch docs/system/diagrams/.gitkeep docs/adr/accepted/.gitkeep` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `apply_patch <<'PATCH' ...` to update `README.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,120p' docs/system/overview.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,120p' docs/system/context.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,120p' docs/system/components.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,120p' docs/system/interactions.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,120p' docs/system/invariants.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,120p' docs/system/requirements.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat .gitignore` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat .editorconfig` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat CODEOWNERS` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat SECURITY.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat CONTRIBUTING.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `find . -name '.DS_Store'` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `cat README.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `ls docs/adr/accepted` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `ls -a docs/adr/accepted` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `ls docs/system/diagrams` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `ls -a docs/system/diagrams` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git add -A` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git add docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git add docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git add -A` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git commit -m "chore: finalize template hygiene"` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git tag -a v1.0.0 -m "Initial stable template"` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `find .. -name AGENTS.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `../agentic-project-manager-template/AGENTS.md`
-- Command: `find . -name .DS_Store` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: *(none)*
-- Command: `cat .gitignore` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `.DS_Store` / `.venv/` / `node_modules/` / `dist/` / `build/` / `__pycache__/`
-- Command: `ls` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `AGENTS.md  CONTRIBUTING.md  PHASES.md  SECURITY.md  CODEOWNERS  LICENSE  README.md  docs`
-- Command: `ls docs` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `adr  contracts  ops  playbooks  system`
-- Command: `ls docs/playbooks` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `claude_opus.md  claude_sonnet.md  codex.md`
-- Command: `ls docs/ops` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `checklist.md  findings.md  runbook.md`
-- Command: `ls docs/system` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `components.md  context.md  diagrams  interactions.md  invariants.md  overview.md  requirements.md`
-- Command: `ls docs/adr` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `accepted  pending`
-- Command: `ls docs/adr/pending` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `0000-template.md`
-- Command: `ls docs/adr/accepted` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: *(none; directory contains .gitkeep only)*
-- Command: `ls docs/system/diagrams` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: *(none; directory contains .gitkeep only)*
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: *(clean)*
-- Command: `sed -n '1,160p' AGENTS.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,200p' PHASES.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,200p' README.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,200p' docs/ops/checklist.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,200p' docs/playbooks/codex.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `sed -n '1,200p' docs/adr/pending/0000-template.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git ls-tree --name-only HEAD docs/system` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `docs/system`
-- Command: `git ls-tree -r HEAD docs/system` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `docs/system/components.md`, `docs/system/context.md`, `docs/system/diagrams/.gitkeep`, `docs/system/interactions.md`, `docs/system/invariants.md`, `docs/system/overview.md`, `docs/system/requirements.md`
-- Command: `git ls-tree -r HEAD docs/adr/accepted` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `docs/adr/accepted/.gitkeep`
-- Command: `apply_patch <<'PATCH' ...` to update `docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: ` M docs/ops/findings.md`
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: ` M docs/ops/findings.md`
-- Command: `git add docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `M  docs/ops/findings.md`
-- Command: `git commit -m "chore: remove .DS_Store artifacts"` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `[work 6cd7be7] chore: remove .DS_Store artifacts` / `1 file changed, 46 insertions(+)`
-- Command: `git tag -a v1.0.1 -m "Template hygiene + canonical structure verification"` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: *(clean)*
-- Command: `apply_patch <<'PATCH' ...` to update `docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git add docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git commit --amend --no-edit` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `[work f4ef93b] chore: remove .DS_Store artifacts` / `Date: Mon Jan 5 11:35:38 2026 +0000` / `1 file changed, 55 insertions(+)`
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: *(clean)*
-- Command: `git tag -f -a v1.0.1 -m "Template hygiene + canonical structure verification"` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: `Updated tag 'v1.0.1' (was 948c414)`
-- Command: `apply_patch <<'PATCH' ...` to update `docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git add docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git commit --amend --no-edit` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: (see git history for amended hash)
-- Command: `git tag -f -a v1.0.1 -m "Template hygiene + canonical structure verification"` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: *(clean)*
-- Command: `apply_patch <<'PATCH' ...` to update `docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `nl -ba docs/ops/findings.md | sed -n '1,200p'` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git add docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git commit --amend --no-edit` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git tag -f -a v1.0.1 -m "Template hygiene + canonical structure verification"` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: *(clean)*
-- Command: `apply_patch <<'PATCH' ...` to update `docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `apply_patch <<'PATCH' ...` to update `docs/ops/findings.md` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-- Command: `git status --short` (workdir: `/workspace/agentic-project-manager-template`, exit: 0)
-  - Output: ` M docs/ops/findings.md`
+## Command Log
+- Entry 1:
+  - Command: TBD
+  - Workdir: TBD
+  - Exit code: TBD
+  - Output/Errors: TBD
+- Entry 2:
+  - Command: TBD
+  - Workdir: TBD
+  - Exit code: TBD
+  - Output/Errors: TBD
+- Entry 3:
+  - Command: TBD
+  - Workdir: TBD
+  - Exit code: TBD
+  - Output/Errors: TBD
