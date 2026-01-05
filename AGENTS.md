@@ -14,7 +14,7 @@ This file defines non-negotiable rules for agentic project management. It applie
 ### Universal Files Are Read-Only
 - Treat universal files as read-only guardrails for every project.
 - Do not add project-specific content to universal files or their directory structure.
-- Only edit universal files when explicitly performing template maintenance tasks.
+- Only edit universal files in the template repository and only with explicit human approval.
 
 ## Output Rules
 - For code changes, prefer diff-only outputs.
