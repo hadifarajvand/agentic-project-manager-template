@@ -39,3 +39,7 @@ Checklist:
 Definition of Done:
 - Changes are documented, tested, and reviewed
 - Phase 4 gate in `docs/ops/checklist.md` is satisfied
+
+## Universal Files Are Read-Only Across All Phases
+- Treat universal files as immutable guardrails unless performing approved template maintenance.
+- Do not place project-specific content in universal files or alter their structure.

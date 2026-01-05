@@ -25,3 +25,4 @@
 - Ambiguous scope or conflicting requirements
 - Proposed dependency or interface change without ADR/contract
 - Non-reproducible failures after documented attempts
+- Any request to modify universal files or their directory structure without explicit template-maintenance scope
