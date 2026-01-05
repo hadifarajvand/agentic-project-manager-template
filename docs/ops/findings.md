@@ -3,26 +3,286 @@
 Fill this during Phase 1 for the target repo. Do not keep template-maintenance logs here.
 
 ## Environment
-- Date: TBD
-- Host: TBD
-- OS: TBD
-- Repo path: TBD
-- Shell: TBD
-- Notes: TBD
+- Date: 2026-01-05T13:05:29+00:00
+- Host: container
+- OS: Linux
+- Repo path: /workspace/agentic-project-manager-template
+- Shell: bash
+- Notes: Updating universal files to enforce read-only rules.
 
 ## Command Log
 - Entry 1:
-  - Command: TBD
-  - Workdir: TBD
-  - Exit code: TBD
-  - Output/Errors: TBD
+  - Command: `ls`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Listed repository root contents.
 - Entry 2:
-  - Command: TBD
-  - Workdir: TBD
-  - Exit code: TBD
-  - Output/Errors: TBD
+  - Command: `find .. -name AGENTS.md -print`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reported AGENTS.md at repository root.
 - Entry 3:
-  - Command: TBD
-  - Workdir: TBD
-  - Exit code: TBD
-  - Output/Errors: TBD
+  - Command: `cat docs/ops/findings.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed existing findings template content.
+- Entry 4:
+  - Command: `ls docs/playbooks`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Listed playbook files (claude_opus.md, claude_sonnet.md, codex.md).
+- Entry 5:
+  - Command: `cat AGENTS.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed universal agent rules.
+- Entry 6:
+  - Command: `cat PHASES.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed phase definitions.
+- Entry 7:
+  - Command: `cat docs/ops/checklist.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed phase gate checklist.
+- Entry 8:
+  - Command: `cat docs/playbooks/codex.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed Codex playbook content.
+- Entry 9:
+  - Command: `cat docs/playbooks/claude_opus.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed Claude Opus playbook content.
+- Entry 10:
+  - Command: `cat docs/playbooks/claude_sonnet.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed Claude Sonnet playbook content.
+- Entry 11:
+  - Command: `apply_patch <<'PATCH' ...` (add Universal Files section to AGENTS.md)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Applied patch adding read-only guidance to AGENTS.md.
+- Entry 12:
+  - Command: `apply_patch` (update PHASES.md with universal read-only section)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Added read-only note across phases.
+- Entry 13:
+  - Command: `apply_patch` (update docs/playbooks/codex.md)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Added universal read-only section to Codex playbook.
+- Entry 14:
+  - Command: `apply_patch` (update docs/playbooks/claude_opus.md)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Added universal read-only section to Claude Opus playbook.
+- Entry 15:
+  - Command: `apply_patch` (update docs/playbooks/claude_sonnet.md)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Added universal read-only section to Claude Sonnet playbook.
+- Entry 16:
+  - Command: `apply_patch` (update docs/ops/checklist.md)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Added stop condition for universal file modifications.
+- Entry 17:
+  - Command: `date -Iseconds`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reported timestamp 2026-01-05T13:05:29+00:00.
+- Entry 18:
+  - Command: `git status --short`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Listed modified files (AGENTS.md, PHASES.md, docs/ops/checklist.md, docs/ops/findings.md, docs/playbooks/*).
+- Entry 19:
+  - Command: `cat AGENTS.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed updated Non-Negotiable Rules with read-only section.
+- Entry 20:
+  - Command: `cat PHASES.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed added universal read-only section across phases.
+- Entry 21:
+  - Command: `cat docs/ops/checklist.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Reviewed stop condition for universal file modifications.
+- Entry 22:
+  - Command: `apply_patch` (append command log entries 18-21)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Recorded additional command executions in findings log.
+- Entry 23:
+  - Command: `apply_patch` (add log entries for prior apply_patch commands)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Captured apply_patch activity in findings log.
+- Entry 24:
+  - Command: `apply_patch` (log apply_patch command activity)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Recorded apply_patch usage in command log.
+- Entry 25:
+  - Command: `apply_patch` (add entries 24-25)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Documented the most recent apply_patch invocations.
+- Entry 26:
+  - Command: `git diff --stat`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Showed summary of changes across 7 files.
+- Entry 27:
+  - Command: `git add AGENTS.md PHASES.md docs/ops/checklist.md docs/ops/findings.md docs/playbooks/claude_opus.md docs/playbooks/claude_sonnet.md docs/playbooks/codex.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Staged modified documentation files.
+- Entry 28:
+  - Command: `git status --short`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Confirmed staged changes for seven files.
+- Entry 29:
+  - Command: `git commit -m "docs: enforce read-only universal files for agents"`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Created commit b215862 with 7 files changed.
+- Entry 30:
+  - Command: `git status --short`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Verified clean working tree after commit.
+- Entry 31:
+  - Command: `git tag v1.0.3`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Created release tag v1.0.3.
+- Entry 32:
+  - Command: `git show --stat --oneline HEAD`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Displayed commit summary and file change stats.
+- Entry 33:
+  - Command: `nl -ba AGENTS.md | sed -n '1,120p'`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Captured numbered content including new universal read-only section.
+- Entry 34:
+  - Command: `nl -ba docs/playbooks/codex.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Captured numbered content including universal read-only section.
+- Entry 35:
+  - Command: `apply_patch` (append command entries 26-35)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Recorded recent commands in findings log.
+- Entry 36:
+  - Command: `git status --short`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Observed docs/ops/findings.md as modified after logging updates.
+- Entry 37:
+  - Command: `git add docs/ops/findings.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Staged findings log updates.
+- Entry 38:
+  - Command: `git commit --amend --no-edit`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Amended commit 21af9b2 including updated findings log.
+- Entry 39:
+  - Command: `git status --short`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Verified clean working tree after amend.
+- Entry 40:
+  - Command: `git tag -f v1.0.3`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Moved tag v1.0.3 to amended commit.
+- Entry 41:
+  - Command: `git show --stat --oneline HEAD`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Displayed updated commit summary and stats.
+- Entry 42:
+  - Command: `apply_patch` (append command entries 36-42)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Logged latest commands in findings file.
+- Entry 43:
+  - Command: `git add docs/ops/findings.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Staged final findings updates.
+- Entry 44:
+  - Command: `git commit --amend --no-edit`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Amended commit to include completed command log.
+- Entry 45:
+  - Command: `git tag -f v1.0.3`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Updated release tag to point to amended commit.
+- Entry 46:
+  - Command: `git show --stat --oneline HEAD`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Displays commit summary and file change stats.
+- Entry 47:
+  - Command: `apply_patch` (append command entries 43-47)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Recorded planned final commands in findings log.
+- Entry 48:
+  - Command: `nl -ba PHASES.md | sed -n '1,160p'`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Capture numbered phase definitions including universal read-only section.
+- Entry 49:
+  - Command: `nl -ba docs/ops/checklist.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Capture numbered stop conditions including universal file modification pause.
+- Entry 50:
+  - Command: `nl -ba docs/ops/findings.md | tail -n 120`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Capture numbered command log entries for citation.
+- Entry 51:
+  - Command: `git add docs/ops/findings.md`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Stage findings updates.
+- Entry 52:
+  - Command: `git commit --amend --no-edit`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Amend commit to include latest logging.
+- Entry 53:
+  - Command: `git tag -f v1.0.3`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Move release tag to amended commit.
+- Entry 54:
+  - Command: `git show --stat --oneline HEAD`
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Display commit summary and file change stats.
+- Entry 55:
+  - Command: `apply_patch` (append command entries 48-55)
+  - Workdir: /workspace/agentic-project-manager-template
+  - Exit code: 0
+  - Output/Errors: Logged planned commands for final citations.

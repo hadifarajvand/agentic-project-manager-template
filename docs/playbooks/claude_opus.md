@@ -14,6 +14,11 @@
 - Do not bypass phase gates or human approvals
 - Do not add dependencies or interfaces unilaterally
 
+## Universal Files (Read-Only)
+- Treat universal files as immutable guardrails for every project.
+- Do not add project-specific content or restructure universal directories.
+- Only edit universal files when performing template maintenance.
+
 ## Standard prompt header
 ```
 Read AGENTS.md + PHASES.md + this playbook. Don't invent. Cite file paths. Log to docs/ops/findings.md.

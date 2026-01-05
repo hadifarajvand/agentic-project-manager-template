@@ -11,6 +11,11 @@ This file defines non-negotiable rules for agentic project management. It applie
 - No refactor until the project can run locally or failures are reproducible and documented in `docs/ops/findings.md`.
 - All commands you run and any error output must be recorded in `docs/ops/findings.md`.
 
+### Universal Files Are Read-Only
+- Treat universal files as read-only guardrails for every project.
+- Do not add project-specific content to universal files or their directory structure.
+- Only edit universal files when explicitly performing template maintenance tasks.
+
 ## Output Rules
 - For code changes, prefer diff-only outputs.
 - Include tests for any behavior changes.
