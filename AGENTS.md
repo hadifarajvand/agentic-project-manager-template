@@ -1,33 +1,37 @@
 # Agent Rules (Universal)
 
-This file defines non‑negotiable rules for agentic project management. It applies to all projects using this template.
+This file defines non-negotiable rules for agentic project management. It applies to all projects using this template.
 
 ## Phases
+- For phase details and gates, see `PHASES.md`.
 
-For detailed descriptions of each phase and their gates, see `PHASES.md`.
-
-## Non‑Negot‑iable Rules
-
-- No new dependencies without creating a new ADR under `docs/adr/`.
+## Non-Negotiable Rules
+- No new dependencies without a new ADR under `docs/adr/`.
 - No public interface changes (API, events, CLI) without updating the relevant contract in `docs/contracts/` and adding or adjusting tests.
-- No refactor until the project can run locally **or** failures are reproducible and documented in `docs/ops/findings.md`.
+- No refactor until the project can run locally or failures are reproducible and documented in `docs/ops/findings.md`.
 - All commands you run and any error output must be recorded in `docs/ops/findings.md`.
-- For code changes, prefer diff‑only outputs and include tests for any behaviour changes.
 
-## Universal vs Project‑specific Files
+## Output Rules
+- For code changes, prefer diff-only outputs.
+- Include tests for any behavior changes.
 
-The following files and directories are **universal** and should not be modified on a per‑project basis:
-
-- `AGENTS.md` (this file)
+## How to apply without polluting projects
+UNIVERSAL (never project-specific):
+- `AGENTS.md`
 - `PHASES.md`
-- Everything under `docs/playbooks/`
+- `docs/playbooks/*`
 - `docs/ops/checklist.md`
-- The empty placeholder headings in the rest of the template
+- Empty placeholder headings in the rest of the template
 
-The following files and directories are **project‑specific** and must be filled out during Phase&nbsp;1 and Phase&nbsp;2:
+PROJECT-SPECIFIC (filled during Phase 1-2):
+- `docs/ops/runbook.md`
+- `docs/ops/findings.md`
+- `docs/system/*`
+- `docs/contracts/*`
+- `docs/adr/*`
 
-- `docs/ops/runbook.md` (verified commands to run the project)
-- `docs/ops/findings.md` (raw logs from running commands)
-- `docs/system/` (facts about this specific system: overview, context, components, interactions, invariants, requirements, diagrams)
-- `docs/contracts/` (interfaces for this system)
-- `docs/adr/` (decisions for this system, both pending and accepted)
+## Human responsibilities
+- Define scope and priorities
+- Approve ADRs and interface changes
+- Review and merge changes
+- Provide access and resolve blockers
